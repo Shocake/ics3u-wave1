@@ -1,0 +1,6 @@
+seconds = int(input("Input the number of seconds to have it converted to days, hours, minutes, and seconds."))
+days = str(seconds // 86400)
+hours = str(seconds % 86400 // 3600)
+minutes = str(seconds % 86400 % 3600 // 60)
+seconds2 = str(seconds % 86400 % 3600 % 60)
+print(days + ":" + hours + ":" + minutes + ":" + seconds2)
